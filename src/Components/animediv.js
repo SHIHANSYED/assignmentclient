@@ -10,7 +10,7 @@ export const Details = () => {
  
   useEffect(()=>{
     axios.get(`https://spbackend-production.up.railway.app/studentinfo`).then((data)=>{
-      console.log(data.data)
+      
       setData(data.data)
     })
   },[])  
